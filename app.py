@@ -22,10 +22,10 @@ def vote(data):
 	print(data)
 	#jsondata=json.loads(data)
 	mydb = mysql.connector.connect(
-  	host="database-2.ckju1qjnik9a.us-east-1.rds.amazonaws.com",
-  	user="admin",
-  	password="basheer123",
- 	database="calculator2"
+  	host="__",
+  	user="__",                                                       
+  	password="__",
+ 	database="__"
 	)
 	mycursor = mydb.cursor()
 	sql = "INSERT INTO users (name, num1,symb,num2,result) VALUES (%s, %s, %s, %s, %s)"
@@ -37,10 +37,10 @@ def vote(data):
 @socketio.on("firstconnect")
 def firstconnect1():
 	mydb = mysql.connector.connect(
-  	host="database-2.ckju1qjnik9a.us-east-1.rds.amazonaws.com",
-  	user="admin",
-  	password="basheer123",
- 	database="calculator2"
+  	host="__",
+  	user="__",
+  	password="__",
+ 	database="__"
 	)
 	mycursor = mydb.cursor()
 	mycursor.execute("SELECT id, name, num1,symb,num2,result FROM users ORDER BY id DESC")
