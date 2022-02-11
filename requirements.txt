@@ -8,7 +8,7 @@ itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
 mysql-connector-python==8.0.21
-protobuf==3.12.2
+protobuf==3.15.0
 python-engineio==3.13.1
 python-socketio==4.6.0
 requests==2.24.0
